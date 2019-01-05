@@ -1,3 +1,5 @@
+//This is the original encoder.c file provided by the class
+//encoder.c is the file that I modified
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
