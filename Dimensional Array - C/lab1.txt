@@ -1,0 +1,101 @@
+Script started on 2018-09-18 17:42:02-0500
+bello067@csel-vole-11:/home/bello067 $ gedit lab1.c[Kgcc lab1.c
+bello067@csel-vole-11:/home/bello067 $ ./a.out
+MENU
+=====
+1. The sum of points scored in a 4 month season
+2. The sum of points scored in the last week of every month in the season
+3. The sum of points scored on a given day throughout the season
+4. Exit
+Enter selection: 1
+628
+MENU
+=====
+1. The sum of points scored in a 4 month season
+2. The sum of points scored in the last week of every month in the season
+3. The sum of points scored on a given day throughout the season
+4. Exit
+Enter selection: 2
+172
+MENU
+=====
+1. The sum of points scored in a 4 month season
+2. The sum of points scored in the last week of every month in the season
+3. The sum of points scored on a given day throughout the season
+4. Exit
+Enter selection: 3
+Enter a day (Monday =0, Wedensday =1, Friday =2): 0
+193
+MENU
+=====
+1. The sum of points scored in a 4 month season
+2. The sum of points scored in the last week of every month in the season
+3. The sum of points scored on a given day throughout the season
+4. Exit
+Enter selection: 3
+Enter a day (Monday =0, Wedensday =1, Friday =2): 1
+216
+MENU
+=====
+1. The sum of points scored in a 4 month season
+2. The sum of points scored in the last week of every month in the season
+3. The sum of points scored on a given day throughout the season
+4. Exit
+Enter selection: 3
+Enter a day (Monday =0, Wedensday =1, Friday =2): 2
+219
+MENU
+=====
+1. The sum of points scored in a 4 month season
+2. The sum of points scored in the last week of every month in the season
+3. The sum of points scored on a given day throughout the season
+4. Exit
+Enter selection: 3
+Enter a day (Monday =0, Wedensday =1, Friday =2): 4
+Must be between 0 and 2, try again:
+Enter a day (Monday =0, Wedensday =1, Friday =2): 1
+193
+MENU
+=====
+1. The sum of points scored in a 4 month season
+2. The sum of points scored in the last week of every month in the season
+3. The sum of points scored on a given day throughout the season
+4. Exit
+Enter selection: 5
+Invalid entry, try again
+MENU
+=====
+1. The sum of points scored in a 4 month season
+2. The sum of points scored in the last week of every month in the season
+3. The sum of points scored on a given day throughout the season
+4. Exit
+Enter selection: 1
+628
+MENU
+=====
+1. The sum of points scored in a 4 month season
+2. The sum of points scored in the last week of every month in the season
+3. The sum of points scored on a given day throughout the season
+4. Exit
+Enter selection: exit
+Invalid entry, try again
+MENU
+=====
+1. The sum of points scored in a 4 month season
+2. The sum of points scored in the last week of every month in the season
+3. The sum of points scored on a given day throughout the season
+4. Exit
+Enter selection: 1
+628
+MENU
+=====
+1. The sum of points scored in a 4 month season
+2. The sum of points scored in the last week of every month in the season
+3. The sum of points scored on a given day throughout the season
+4. Exit
+Enter selection: 4
+Exit
+bello067@csel-vole-11:/home/bello067 $ exit
+exit
+
+Script done on 2018-09-18 17:43:23-0500
