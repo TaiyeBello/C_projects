@@ -16,7 +16,7 @@ void* add_Record(void* ptr,address a){
 	int size_Of_Address = (sizeof(address) * (count_Num_Record+1));
 	memcpy(new,ptr,size_Of_Database());
 	void* new_Ptr = ptr + (sizeof(address) * count_Num_Record);
-	memcpy(new_Ptr,&a,sizeof(a));//seg fault
+	memcpy(new_Ptr,&a,sizeof(a));
 	free(ptr);
 	
 	count_Num_Record += 1;
