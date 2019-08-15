@@ -1,0 +1,48 @@
+@> test-data/table.sh 100 1
+@> test-data/table.sh 100 2
+@> test-data/table.sh 50 3
+@> grep flurbo test-data/gettysburg.txt
+@> list
+JOB  #PID      STAT   STR_STAT OUTB COMMAND
+0    %0          -1        RUN   -1 test-data/table.sh 100 1 
+1    %1          -1        RUN   -1 test-data/table.sh 100 2 
+2    %2          -1        RUN   -1 test-data/table.sh 50 3 
+3    %3          -1        RUN   -1 grep flurbo test-data/gettysburg.txt 
+@> ls -1 -a -F test-data/stuff/
+@> cat test-data/print_args.c
+@> pause 0 1
+@> output-all
+@> grep -n the test-data/gettysburg.txt
+@> grep -n the test-data/quote.txt
+@> list
+JOB  #PID      STAT   STR_STAT OUTB COMMAND
+0    %0          -1        RUN   -1 test-data/table.sh 100 1 
+1    %1          -1        RUN   -1 test-data/table.sh 100 2 
+2    %2          -1        RUN   -1 test-data/table.sh 50 3 
+3    %3          -1        RUN   -1 grep flurbo test-data/gettysburg.txt 
+4    %4          -1        RUN   -1 ls -1 -a -F test-data/stuff/ 
+5    %5          -1        RUN   -1 cat test-data/print_args.c 
+6    %6          -1        RUN   -1 output-all 
+7    %7          -1        RUN   -1 grep -n the test-data/gettysburg.txt 
+8    %8          -1        RUN   -1 grep -n the test-data/quote.txt 
+@> wait-all
+@> list
+JOB  #PID      STAT   STR_STAT OUTB COMMAND
+0    %0          -1        RUN   -1 test-data/table.sh 100 1 
+1    %1          -1        RUN   -1 test-data/table.sh 100 2 
+2    %2          -1        RUN   -1 test-data/table.sh 50 3 
+3    %3           1    EXIT(1)    0 grep flurbo test-data/gettysburg.txt 
+4    %4           0    EXIT(0)   59 ls -1 -a -F test-data/stuff/ 
+5    %5           0    EXIT(0)  218 cat test-data/print_args.c 
+6    %6         255  EXIT(255)  719 output-all 
+7    %7           0    EXIT(0)  879 grep -n the test-data/gettysburg.txt 
+8    %8           1    EXIT(1)    0 grep -n the test-data/quote.txt 
+@> output-all
+@> exit
+ALERTS:
+@!!! grep[%3]: EXIT(1)
+@!!! ls[%4]: EXIT(0)
+@!!! cat[%5]: EXIT(0)
+@!!! output-all[%6]: EXIT(255)
+@!!! grep[%7]: EXIT(0)
+@!!! grep[%8]: EXIT(1)
