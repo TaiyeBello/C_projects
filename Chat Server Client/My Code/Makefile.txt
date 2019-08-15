@@ -1,0 +1,4 @@
+CFLAGS = -Wall -g
+CC     = gcc $(CFLAGS)
+
+PROGRAMS: bl_server.c bl_client.c
